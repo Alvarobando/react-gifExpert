@@ -1,4 +1,4 @@
-
+import Proptypes from 'prop-types'
 
 export const GriItem = ({title,url}) => {
   return (
@@ -9,4 +9,10 @@ export const GriItem = ({title,url}) => {
 
     </div>
   )
+}
+
+GriItem.proptypes = {
+  title : Proptypes.string.isRequired,
+  url : Proptypes.string.isRequired,
+
 }
